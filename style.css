@@ -1,0 +1,101 @@
+/* Reset styles or any global styles go here */
+
+/* Skip to Main Content Link Styles */
+.skip-link {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    /* Add styles to make it visually hidden but accessible */
+    color: transparent; /* Hide text content visually */
+    background-color: transparent; /* Make the link background transparent */
+    border: none; /* Remove border */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition for better user experience */
+  }
+  
+  .skip-link:focus {
+    position: static;
+    left: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+    margin: 10px; /* Add some margin for better visibility */
+    color: #000; /* Change color when focused for better visibility */
+    background-color: #fff; /* Change background color when focused for better visibility */
+    border: 1px solid #000; /* Add border for better visibility */
+  }
+  
+  /* Change the nav element */
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px; /* Added padding for better styling */
+    border-radius: 10px; /* Added border-radius for rounded corners */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px; /* Added border-radius for rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for better user experience */
+  }
+  
+  nav a:hover {
+    background-color: #555;
+  }
+  
+  /* Style the main content */
+  main {
+    padding: 20px;
+  }
+  
+  /* Style all images using the box model */
+  img {
+    max-height: 100%;
+    width: auto;
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s; /* Smooth transition for better user experience */
+  }
+  
+  img:hover {
+    transform: scale(1.1); /* Scale up on hover for an interesting effect */
+  }
+  
+  /* Apply the grid property to at least one parent element */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  /* Ensure each article aligns from top to bottom */
+ .grid article {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Update at least one element using the nth-child selector */
+  .grid article:nth-child(even) {
+    background-color: #f5f5f5; /* Give every other article a different background color */
+  }
+
+  /* Style the footer */
+ /* Style the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
